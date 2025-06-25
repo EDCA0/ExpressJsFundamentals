@@ -1,0 +1,25 @@
+{
+  "name": "fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDCA0/ExpressJsFundamentals.git"
+  },
+  "keywords": [],
+  "author": "EDCA<eric.cavanzo@outlook.com>",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EDCA0/ExpressJsFundamentals/issues"
+  },
+  "homepage": "https://github.com/EDCA0/ExpressJsFundamentals#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

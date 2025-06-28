@@ -1,11 +1,11 @@
-import { express } from "../modules/express";
-import {Request, Response} from "express"
+import  express, {Request, Response} 					 from "../modules/express";
 
 export const router = express.Router()
 
 router.get('/', (request : Request, response : Response) => {
-	const limit : number = parseInt(request.query.limit as string, 10);
+	const limit  : number = parseInt(request.query.limit as string, 10);
 	const offset : number = parseInt(request.query.offset as string, 10);
+
 	if(limit && offset) {
 		if(isNaN(limit) || isNaN(offset)) {
 			return response.status(400).json( {

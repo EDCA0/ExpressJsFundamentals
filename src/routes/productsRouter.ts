@@ -1,8 +1,7 @@
-import { express } from "../modules/express";
-import { Request, Response} from "express";
-import { faker } from "../modules/faker";
+import  express, {Request, Response, Router} 					 from "../modules/express";
+import { faker } 															 from "../modules/faker";
 
-export const router = express.Router()
+export const router  : Router = express.Router()
 
 router.get('/', (request : Request , response : Response ) => {
 	const products = [];
@@ -32,3 +31,13 @@ router.get('/:id', (request : Request, response : Response) => {
 		price : 2000
 	});
 })
+
+router.post('/', (request : Request, response : Response)  => {
+	const body = request.body;
+
+	response.json({
+		message : 'created',
+		data : body
+	});
+})
+

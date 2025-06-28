@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ",
-    "dev": "nodemon src/class/index.ts",
-    "start": "ts-node src/class/index.ts"
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 import  express, {Request, Response, Router} 					 from "../modules/express";
-import { faker } 															 from "../modules/faker";
+import { faker } 															 				 from "../modules/faker";
 
 export const router  : Router = express.Router()
 
@@ -40,4 +40,27 @@ router.post('/', (request : Request, response : Response)  => {
 		data : body
 	});
 })
+
+router.patch('/:id', (request : Request, response : Response)  => {
+	const id : string | number = request.params.id
+	const body = request.body;
+
+	response.json({
+		message : 'updated',
+		data : body,
+		id
+	});
+})
+
+router.delete('/:id', (request : Request, response : Response)  => {
+	const id : string | number = request.params.id
+	const body = request.body;
+
+	response.json({
+		message : 'deleted',
+		data : body,
+		id
+	});
+})
+
 

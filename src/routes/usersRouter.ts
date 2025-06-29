@@ -1,4 +1,4 @@
-import  express, {Request, Response} 					 from "../modules/express";
+import  express, {Request, Response} from "../modules/express";
 
 export const router = express.Router()
 

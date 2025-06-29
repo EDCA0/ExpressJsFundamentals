@@ -1,4 +1,4 @@
-import { express } from "./modules/express";
+import { express }   from "./modules/express";
 import { routerApi } from "./routes";
 
 const app = express();

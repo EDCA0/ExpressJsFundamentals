@@ -12,6 +12,4 @@ export function routerApi(app : Application) {
 	router.use('/categories', 	categoriesRouter);
 	router.use('/users', 				usersRouter);
 	router.use('/inicio', 			inicioRouter);
-
-		const router2  : Router = express.Router();
 }
